@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Resume Website Template </title>
+
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'resume/style.css' %}">
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+<script>
+  
+  (function ($) {
+  $(document).ready(function(){
+    
+  // hide .navbar first
+  $(".navbar").hide();
+  
+  // fade in .navbar
+  $(function () {
+    $(window).scroll(function () {
+            // set distance user needs to scroll before we fadeIn navbar
+      if ($(this).scrollTop() > 750) {
+        $('.navbar').fadeIn();
+      } else {
+        $('.navbar').fadeOut();
+      }
+    });
+
+  
+  });
+
+});
+  }(jQuery));
+
+</script>
+
+
+
+
+
+</head>
+<body> 
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Education & Experience</a>
+      </li>
+
+      <li class="nav-item">
+       <a class="nav-link" href="#">Projects</a>
+     </li>
+    </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Me</a>
+      </li>
+   
+    </ul>
+  </div>
+</nav>
+
+<section id = "header">
+
+
+
+
+
+
+
+	<div class = "container text-center">
+		<div class = "user-box">
+			<div class = "intro-text">
+			<!--<img src = "Assets/user.png">--------->
+				<div id="test">
+					<h3>Hey! I'm</h3>
+					<h1>Nicolas Poffley</h1>
+					<p>a PwC Technology Degree Apprentice Studying Computer Science @ University of Birmingham</p>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+			<div class = "buttonfade">
+				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect">About me</button>
+				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect">Education & Experience</button>
+				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect" >Projects</button>
+				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect" >Blog</button>
+				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect" >Contact Me</button>
+          
+        </button>
+
+
+
+			</div>
+      
+	 	</div>
+	</div>
+</section>
+
+
+
+
+
+    <section id="info1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="info-left">
+              <img src="{% static 'resume/Assets/user.png' %}">
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6">
+            <div class="info-right">
+              <h2>About Me</h2>
+              <p>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+    
+
+
+	<section id="testimonial">
+      <div class="container">
+      	<h3>Education</h3>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"</p>
+      </div>
+    </section>
+
+	<section id="testimonial">
+    <div class="container">
+     <h3>Experience</h3>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"</p>
+    </div>
+  </section>
+
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+      
+          <div class="contact1">
+            <div class="container-contact1">
+              <div class="contact1-pic js-tilt" data-tilt>
+                <img src="{% static 'resume/Assets/cvpic.png' %}" alt="IMG">
+              </div>
+
+              <form class="contact1-form validate-form">
+                <span class="contact1-form-title">
+                  Resume
+                </span>
+
+              <div class="container-contact1-form-btn">
+                  <button class="contact1-form-btn">
+                    <span>
+                      Open
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+
+                <div class="container-contact1-form-btn">
+                  <button class="contact1-form-btn">
+                    <span>
+                      Download
+                      <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonial">
+   <div class="contact1">
+    <div class="container-contact1">
+      <div class="contact1-pic js-tilt" data-tilt>
+                <img src="{% static 'resume/Assets/mail.png' %}" alt="IMG">
+      </div>
+
+      <form class="contact1-form validate-form">
+        <span class="contact1-form-title">
+          Get in touch
+        </span>
+
+        <div class="wrap-input1 validate-input" data-validate = "Name is required">
+          <input class="input1" type="text" name="name" placeholder="Name">
+          <span class="shadow-input1"></span>
+        </div>
+
+        <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+          <input class="input1" type="text" name="email" placeholder="Email">
+          <span class="shadow-input1"></span>
+        </div>
+
+        <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+          <input class="input1" type="text" name="subject" placeholder="Subject">
+          <span class="shadow-input1"></span>
+        </div>
+
+        <div class="wrap-input1 validate-input" data-validate = "Message is required">
+          <textarea class="input1" name="message" placeholder="Message"></textarea>
+          <span class="shadow-input1"></span>
+        </div>
+
+        <div class="container-contact1-form-btn">
+          <button class="contact1-form-btn">
+            <span>
+              Send Email
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
