@@ -1,6 +1,5 @@
 
 
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -36,6 +35,8 @@
 body, html {
   height: 100%;
   font-family: Montserrat-Regular, sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 /*---------------------------------------------*/
@@ -159,9 +160,9 @@ iframe {
 
 body {
 
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 
 }
 
@@ -248,11 +249,11 @@ footer{
 
 #header{
 
-	height: 100vh;
-	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(Assets/background.png);
-	background-position: center;
-	background-size: cover; 
-	background-attachment: fixed;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(Assets/background.png);
+  background-position: center;
+  background-size: cover; 
+  background-attachment: fixed;
 }
 
 
@@ -261,48 +262,48 @@ footer{
 
 .user-box{
  
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute; 
 }
 
 .user-box img{
 
-	width: 100px;
+  width: 100px;
 }
 
 .user-box h1{
-	color:#FFFFFF;
-	font-weight: bold;
-	margin: 5px;
+  color:#FFFFFF;
+  font-weight: bold;
+  margin: 5px;
   font-family:Poppins;
 }
 .user-box h3{
-	color:#FFFFFF;
-	font-style: italic;
-	margin: 5px;
+  color:#FFFFFF;
+  font-style: italic;
+  margin: 5px;
   font-family:Roboto;
 
 }
 .user-box p{
-	color:#FFFFFF;
-	font-weight: bold;
-	margin: 0px;
-	font-style: italic;
+  color:#FFFFFF;
+  font-weight: bold;
+  margin: 0px;
+  font-style: italic;
   font-family:Roboto;
 
 }
 
 
 .intro-text{
-	animation: mover 2s;
+  animation: mover 2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes mover {
-	0%{transform: translateY(0);}
-	100%{transform: translateY(-250px);}
+  0%{transform: translateY(0);}
+  100%{transform: translateY(-250px);}
 
 }
 
@@ -311,12 +312,12 @@ footer{
 
 /*-----------------ABOUT-------------*/
 .about{
-	padding-top: 100px;
-	padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .profile-img{
-	height: 400px;
+  height: 400px;
 }
 
 
@@ -364,8 +365,8 @@ footer{
 }
 
 .buttonfade button{
-		margin: : 10px;
-		margin-right: 50px;
+    margin: : 10px;
+    margin-right: 50px;
 }
 
 

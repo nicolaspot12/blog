@@ -1,15 +1,14 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
-<title> Resume Website Template </title>
+<title> Nic's Site </title>
 
 
-{% load static %}
+
 
 <link rel="stylesheet" type="text/css" href="{% static 'resume/style.css' %}">
-
-
-
 
 
   <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -35,6 +34,7 @@
 
 <script src="https://unpkg.com/scrollreveal"></script>
 
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 <script>
   
@@ -78,24 +78,21 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About Me</a>
+        <a class="nav-link" href="#aboutMe">About Me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Education & Experience</a>
+        <a class="nav-link" href="#education">Education & Experience</a>
       </li>
 
-      <li class="nav-item">
-       <a class="nav-link" href="#">Projects</a>
-     </li>
-    </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+    </li>
+        <a class="nav-link" href="/blog">Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact Me</a>
+        <a class="nav-link" href="#contactMe">Contact Me</a>
       </li>
    
     </ul>
@@ -143,11 +140,20 @@
 				</div>
 			</div>
 			<div class = "buttonfade">
-				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect">About me</button>
-				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect">Education & Experience</button>
-				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect" >Projects</button>
-				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect" >Blog</button>
-				<button type="button" class="btn btn-lg btn-outline-warning btn-rounded waves-effect" >Contact Me</button>
+				
+
+        <a class="btn btn-lg btn-outline-warning btn-rounded waves-effect" href="#aboutMe" role="button">About me</a>
+
+        <a class="btn btn-lg btn-outline-warning btn-rounded waves-effect" href="#education" role="button">Education & Experience</a>
+
+				
+			
+
+
+        <a class="btn btn-lg btn-outline-warning btn-rounded waves-effect" href="/blog" role="button">Blog (BRIDGING COURSEWORK)</a>
+
+<a class="btn btn-lg btn-outline-warning btn-rounded waves-effect" href="#contactMe" role="button">Contact Me</a>
+
           
         </button>
 
@@ -172,7 +178,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6">
-            <div class="info-right">
+            <div id="aboutMe" class="info-right">
               <h2>About Me</h2>
               <p>Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
             </div>
@@ -185,7 +191,7 @@
 
 
 	<section id="testimonial">
-      <div class="container">
+      <div id="education" class="container">
       	<h3>Education</h3>
         <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud"</p>
       </div>
@@ -210,7 +216,7 @@
 
               <form class="contact1-form validate-form">
                 <span class="contact1-form-title">
-                  Resume
+                  Resume (Not yet added, placeholder)
                 </span>
 
               <div class="container-contact1-form-btn">
@@ -242,44 +248,15 @@
   <section id="testimonial">
    <div class="contact1">
     <div class="container-contact1">
-      <div class="contact1-pic js-tilt" data-tilt>
-                <img src="{% static 'resume/Assets/mail.png' %}" alt="IMG">
+      <div id="contactMe" class="contact1-pic js-tilt" data-tilt>
+          <h3>Check out my LinkedIn! --></h2>
+          <img src="{% static 'resume/Assets/linkedin.png' %}">
       </div>
 
-      <form class="contact1-form validate-form">
-        <span class="contact1-form-title">
-          Get in touch
-        </span>
+        
 
-        <div class="wrap-input1 validate-input" data-validate = "Name is required">
-          <input class="input1" type="text" name="name" placeholder="Name">
-          <span class="shadow-input1"></span>
-        </div>
-
-        <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-          <input class="input1" type="text" name="email" placeholder="Email">
-          <span class="shadow-input1"></span>
-        </div>
-
-        <div class="wrap-input1 validate-input" data-validate = "Subject is required">
-          <input class="input1" type="text" name="subject" placeholder="Subject">
-          <span class="shadow-input1"></span>
-        </div>
-
-        <div class="wrap-input1 validate-input" data-validate = "Message is required">
-          <textarea class="input1" name="message" placeholder="Message"></textarea>
-          <span class="shadow-input1"></span>
-        </div>
-
-        <div class="container-contact1-form-btn">
-          <button class="contact1-form-btn">
-            <span>
-              Send Email
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </span>
-          </button>
-        </div>
-      </form>
+        <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="nicolas-poffley-111213153"><a class="LI-simple-link" href='https://uk.linkedin.com/in/nicolas-poffley-111213153?trk=profile-badge'>Nicolas Poffley</a></div>
+        
     </div>
   </div>
 </section>
